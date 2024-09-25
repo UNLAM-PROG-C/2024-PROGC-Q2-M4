@@ -1,0 +1,4 @@
+Este es un archivo de prueba.
+Contiene varias líneas de texto para contar caracteres.
+Vamos a dividir el trabajo entre múltiples threads.
+Cada thread manejará una porción del archivo.
