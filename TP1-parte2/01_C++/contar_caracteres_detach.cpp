@@ -86,7 +86,10 @@ void ProcesarArchivo(
   }
 
   unique_lock<mutex> lock(mtx);
-  cv.wait(lock, [] { return hilos_activos == 0; });
+  cv.wait(lock, []
+  {
+    return hilos_activos == 0;
+  });
 
   cout << "Todos los hilos han terminado.\n";
 }
