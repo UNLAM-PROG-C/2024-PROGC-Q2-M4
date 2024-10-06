@@ -46,10 +46,7 @@ void mujeres(int numero)
     }
     accesoRegionCritica.lock();
     cantidadMujeres++;
-    if (cantidadMujeres == 1)
-    {
-        situacionBaño = HAY_MUJERES;
-    }
+    if (cantidadMujeres == 1) { situacionBaño = HAY_MUJERES; }
     imprimirPantalla.lock();
     cout << nombre + " entro al baño." << endl;
     cout << "\t- CantidadHombres: " + to_string(cantidadHombres) + "\n\t- CantidadMujeres: " + to_string(cantidadMujeres) << endl;
