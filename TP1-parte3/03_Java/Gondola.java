@@ -12,7 +12,7 @@ public class Gondola
     Cliente[] clientes = new Cliente[cantidadClientes];
     for (int i = 0; i < cantidadClientes; i++)
     {
-      clientes[i] = new Cliente(i, Constantes.CANTIDAD_A_COMPRAR);
+      clientes[i] = new Cliente(i, (int) (Math.random() * 2) + 1);
       clientes[i].start();
     }
     return clientes;
