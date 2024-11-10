@@ -1,0 +1,8 @@
+{
+    "name": "Raichu",
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "front_sprite_path": "sprites/raichu_front_default.png",
+    "back_sprite_path": "sprites/raichu_back_default.png"
+}

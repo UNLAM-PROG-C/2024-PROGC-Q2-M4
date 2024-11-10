@@ -1,0 +1,8 @@
+{
+    "name": "Beedrill",
+    "hp": 65,
+    "attack": 90,
+    "defense": 40,
+    "front_sprite_path": "sprites/beedrill_front_default.png",
+    "back_sprite_path": "sprites/beedrill_back_default.png"
+}

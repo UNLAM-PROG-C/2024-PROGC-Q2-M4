@@ -1,0 +1,8 @@
+{
+    "name": "Bulbasaur",
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "front_sprite_path": "sprites/bulbasaur_front_default.png",
+    "back_sprite_path": "sprites/bulbasaur_back_default.png"
+}

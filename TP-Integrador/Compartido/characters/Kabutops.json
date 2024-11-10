@@ -1,0 +1,8 @@
+{
+    "name": "Kabutops",
+    "hp": 60,
+    "attack": 115,
+    "defense": 105,
+    "front_sprite_path": "sprites/kabutops_front_default.png",
+    "back_sprite_path": "sprites/kabutops_back_default.png"
+}

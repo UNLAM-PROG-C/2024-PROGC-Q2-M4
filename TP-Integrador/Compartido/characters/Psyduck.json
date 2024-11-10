@@ -1,0 +1,8 @@
+{
+    "name": "Psyduck",
+    "hp": 50,
+    "attack": 52,
+    "defense": 48,
+    "front_sprite_path": "sprites/psyduck_front_default.png",
+    "back_sprite_path": "sprites/psyduck_back_default.png"
+}

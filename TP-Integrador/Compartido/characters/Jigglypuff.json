@@ -1,0 +1,8 @@
+{
+    "name": "Jigglypuff",
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "front_sprite_path": "sprites/jigglypuff_front_default.png",
+    "back_sprite_path": "sprites/jigglypuff_back_default.png"
+}

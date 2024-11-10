@@ -1,0 +1,8 @@
+{
+    "name": "Pichu",
+    "hp": 20,
+    "attack": 40,
+    "defense": 15,
+    "front_sprite_path": "sprites/pichu_front_default.png",
+    "back_sprite_path": "sprites/pichu_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Rattata",
+    "hp": 30,
+    "attack": 56,
+    "defense": 35,
+    "front_sprite_path": "sprites/rattata_front_default.png",
+    "back_sprite_path": "sprites/rattata_back_default.png"
+}

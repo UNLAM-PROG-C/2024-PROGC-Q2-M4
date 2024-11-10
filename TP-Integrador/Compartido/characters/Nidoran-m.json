@@ -1,0 +1,8 @@
+{
+    "name": "Nidoran-m",
+    "hp": 46,
+    "attack": 57,
+    "defense": 40,
+    "front_sprite_path": "sprites/nidoran-m_front_default.png",
+    "back_sprite_path": "sprites/nidoran-m_back_default.png"
+}

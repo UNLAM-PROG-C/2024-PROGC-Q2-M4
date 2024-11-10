@@ -1,0 +1,8 @@
+{
+    "name": "Sunkern",
+    "hp": 30,
+    "attack": 30,
+    "defense": 30,
+    "front_sprite_path": "sprites/sunkern_front_default.png",
+    "back_sprite_path": "sprites/sunkern_back_default.png"
+}

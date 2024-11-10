@@ -1,0 +1,8 @@
+{
+    "name": "Gastly",
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "front_sprite_path": "sprites/gastly_front_default.png",
+    "back_sprite_path": "sprites/gastly_back_default.png"
+}

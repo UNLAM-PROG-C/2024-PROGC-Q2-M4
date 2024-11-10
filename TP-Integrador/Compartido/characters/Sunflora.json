@@ -1,0 +1,8 @@
+{
+    "name": "Sunflora",
+    "hp": 75,
+    "attack": 75,
+    "defense": 55,
+    "front_sprite_path": "sprites/sunflora_front_default.png",
+    "back_sprite_path": "sprites/sunflora_back_default.png"
+}

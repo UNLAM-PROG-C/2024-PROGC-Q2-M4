@@ -1,0 +1,8 @@
+{
+    "name": "Pikachu",
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "front_sprite_path": "sprites/pikachu_front_default.png",
+    "back_sprite_path": "sprites/pikachu_back_default.png"
+}

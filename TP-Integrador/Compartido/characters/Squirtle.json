@@ -1,0 +1,8 @@
+{
+    "name": "Squirtle",
+    "hp": 44,
+    "attack": 48,
+    "defense": 65,
+    "front_sprite_path": "sprites/squirtle_front_default.png",
+    "back_sprite_path": "sprites/squirtle_back_default.png"
+}

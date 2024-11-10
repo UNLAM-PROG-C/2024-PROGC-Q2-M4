@@ -1,0 +1,8 @@
+{
+    "name": "Slowbro",
+    "hp": 95,
+    "attack": 75,
+    "defense": 110,
+    "front_sprite_path": "sprites/slowbro_front_default.png",
+    "back_sprite_path": "sprites/slowbro_back_default.png"
+}

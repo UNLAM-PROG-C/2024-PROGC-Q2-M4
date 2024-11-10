@@ -1,0 +1,8 @@
+{
+    "name": "Zapdos",
+    "hp": 90,
+    "attack": 90,
+    "defense": 85,
+    "front_sprite_path": "sprites/zapdos_front_default.png",
+    "back_sprite_path": "sprites/zapdos_back_default.png"
+}

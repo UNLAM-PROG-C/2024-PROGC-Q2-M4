@@ -1,0 +1,8 @@
+{
+    "name": "Quagsire",
+    "hp": 95,
+    "attack": 85,
+    "defense": 85,
+    "front_sprite_path": "sprites/quagsire_front_default.png",
+    "back_sprite_path": "sprites/quagsire_back_default.png"
+}

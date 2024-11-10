@@ -1,0 +1,8 @@
+{
+    "name": "Articuno",
+    "hp": 90,
+    "attack": 85,
+    "defense": 100,
+    "front_sprite_path": "sprites/articuno_front_default.png",
+    "back_sprite_path": "sprites/articuno_back_default.png"
+}

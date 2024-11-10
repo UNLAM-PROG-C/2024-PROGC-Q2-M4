@@ -1,0 +1,8 @@
+{
+    "name": "Nidorina",
+    "hp": 70,
+    "attack": 62,
+    "defense": 67,
+    "front_sprite_path": "sprites/nidorina_front_default.png",
+    "back_sprite_path": "sprites/nidorina_back_default.png"
+}

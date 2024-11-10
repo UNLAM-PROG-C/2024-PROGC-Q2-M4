@@ -1,0 +1,8 @@
+{
+    "name": "Dodrio",
+    "hp": 60,
+    "attack": 110,
+    "defense": 70,
+    "front_sprite_path": "sprites/dodrio_front_default.png",
+    "back_sprite_path": "sprites/dodrio_back_default.png"
+}

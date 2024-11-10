@@ -1,0 +1,8 @@
+{
+    "name": "Poliwag",
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "front_sprite_path": "sprites/poliwag_front_default.png",
+    "back_sprite_path": "sprites/poliwag_back_default.png"
+}

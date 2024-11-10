@@ -1,0 +1,8 @@
+{
+    "name": "Cloyster",
+    "hp": 50,
+    "attack": 95,
+    "defense": 180,
+    "front_sprite_path": "sprites/cloyster_front_default.png",
+    "back_sprite_path": "sprites/cloyster_back_default.png"
+}

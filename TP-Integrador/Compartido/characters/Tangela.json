@@ -1,0 +1,8 @@
+{
+    "name": "Tangela",
+    "hp": 65,
+    "attack": 55,
+    "defense": 115,
+    "front_sprite_path": "sprites/tangela_front_default.png",
+    "back_sprite_path": "sprites/tangela_back_default.png"
+}

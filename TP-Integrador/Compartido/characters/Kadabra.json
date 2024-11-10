@@ -1,0 +1,8 @@
+{
+    "name": "Kadabra",
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "front_sprite_path": "sprites/kadabra_front_default.png",
+    "back_sprite_path": "sprites/kadabra_back_default.png"
+}

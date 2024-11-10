@@ -1,0 +1,8 @@
+{
+    "name": "Tentacool",
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "front_sprite_path": "sprites/tentacool_front_default.png",
+    "back_sprite_path": "sprites/tentacool_back_default.png"
+}

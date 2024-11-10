@@ -1,0 +1,8 @@
+{
+    "name": "Graveler",
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "front_sprite_path": "sprites/graveler_front_default.png",
+    "back_sprite_path": "sprites/graveler_back_default.png"
+}

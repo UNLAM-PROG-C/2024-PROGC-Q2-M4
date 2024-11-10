@@ -1,0 +1,8 @@
+{
+    "name": "Sentret",
+    "hp": 35,
+    "attack": 46,
+    "defense": 34,
+    "front_sprite_path": "sprites/sentret_front_default.png",
+    "back_sprite_path": "sprites/sentret_back_default.png"
+}

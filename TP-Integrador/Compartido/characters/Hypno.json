@@ -1,0 +1,8 @@
+{
+    "name": "Hypno",
+    "hp": 85,
+    "attack": 73,
+    "defense": 70,
+    "front_sprite_path": "sprites/hypno_front_default.png",
+    "back_sprite_path": "sprites/hypno_back_default.png"
+}

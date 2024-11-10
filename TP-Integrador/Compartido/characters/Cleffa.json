@@ -1,0 +1,8 @@
+{
+    "name": "Cleffa",
+    "hp": 50,
+    "attack": 25,
+    "defense": 28,
+    "front_sprite_path": "sprites/cleffa_front_default.png",
+    "back_sprite_path": "sprites/cleffa_back_default.png"
+}

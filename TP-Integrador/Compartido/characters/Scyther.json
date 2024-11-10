@@ -1,0 +1,8 @@
+{
+    "name": "Scyther",
+    "hp": 70,
+    "attack": 110,
+    "defense": 80,
+    "front_sprite_path": "sprites/scyther_front_default.png",
+    "back_sprite_path": "sprites/scyther_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Meowth",
+    "hp": 40,
+    "attack": 45,
+    "defense": 35,
+    "front_sprite_path": "sprites/meowth_front_default.png",
+    "back_sprite_path": "sprites/meowth_back_default.png"
+}

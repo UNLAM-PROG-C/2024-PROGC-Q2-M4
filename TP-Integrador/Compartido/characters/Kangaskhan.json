@@ -1,0 +1,8 @@
+{
+    "name": "Kangaskhan",
+    "hp": 105,
+    "attack": 95,
+    "defense": 80,
+    "front_sprite_path": "sprites/kangaskhan_front_default.png",
+    "back_sprite_path": "sprites/kangaskhan_back_default.png"
+}

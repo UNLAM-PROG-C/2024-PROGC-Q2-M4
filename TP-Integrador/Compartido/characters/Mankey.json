@@ -1,0 +1,8 @@
+{
+    "name": "Mankey",
+    "hp": 40,
+    "attack": 80,
+    "defense": 35,
+    "front_sprite_path": "sprites/mankey_front_default.png",
+    "back_sprite_path": "sprites/mankey_back_default.png"
+}

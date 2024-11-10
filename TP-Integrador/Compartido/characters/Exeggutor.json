@@ -1,0 +1,8 @@
+{
+    "name": "Exeggutor",
+    "hp": 95,
+    "attack": 95,
+    "defense": 85,
+    "front_sprite_path": "sprites/exeggutor_front_default.png",
+    "back_sprite_path": "sprites/exeggutor_back_default.png"
+}

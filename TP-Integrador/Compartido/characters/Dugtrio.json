@@ -1,0 +1,8 @@
+{
+    "name": "Dugtrio",
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "front_sprite_path": "sprites/dugtrio_front_default.png",
+    "back_sprite_path": "sprites/dugtrio_back_default.png"
+}

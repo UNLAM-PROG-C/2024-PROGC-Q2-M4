@@ -1,0 +1,8 @@
+{
+    "name": "Crobat",
+    "hp": 85,
+    "attack": 90,
+    "defense": 80,
+    "front_sprite_path": "sprites/crobat_front_default.png",
+    "back_sprite_path": "sprites/crobat_back_default.png"
+}

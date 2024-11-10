@@ -1,0 +1,8 @@
+{
+    "name": "Poliwhirl",
+    "hp": 65,
+    "attack": 65,
+    "defense": 65,
+    "front_sprite_path": "sprites/poliwhirl_front_default.png",
+    "back_sprite_path": "sprites/poliwhirl_back_default.png"
+}

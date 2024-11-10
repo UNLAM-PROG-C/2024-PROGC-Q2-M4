@@ -1,0 +1,8 @@
+{
+    "name": "Porygon",
+    "hp": 65,
+    "attack": 60,
+    "defense": 70,
+    "front_sprite_path": "sprites/porygon_front_default.png",
+    "back_sprite_path": "sprites/porygon_back_default.png"
+}

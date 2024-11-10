@@ -1,0 +1,8 @@
+{
+    "name": "Clefairy",
+    "hp": 70,
+    "attack": 45,
+    "defense": 48,
+    "front_sprite_path": "sprites/clefairy_front_default.png",
+    "back_sprite_path": "sprites/clefairy_back_default.png"
+}

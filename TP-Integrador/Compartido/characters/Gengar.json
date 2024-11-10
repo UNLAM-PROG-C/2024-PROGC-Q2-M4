@@ -1,0 +1,8 @@
+{
+    "name": "Gengar",
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "front_sprite_path": "sprites/gengar_front_default.png",
+    "back_sprite_path": "sprites/gengar_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Slowking",
+    "hp": 95,
+    "attack": 75,
+    "defense": 80,
+    "front_sprite_path": "sprites/slowking_front_default.png",
+    "back_sprite_path": "sprites/slowking_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Poliwrath",
+    "hp": 90,
+    "attack": 95,
+    "defense": 95,
+    "front_sprite_path": "sprites/poliwrath_front_default.png",
+    "back_sprite_path": "sprites/poliwrath_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Onix",
+    "hp": 35,
+    "attack": 45,
+    "defense": 160,
+    "front_sprite_path": "sprites/onix_front_default.png",
+    "back_sprite_path": "sprites/onix_back_default.png"
+}

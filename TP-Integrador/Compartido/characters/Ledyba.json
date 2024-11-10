@@ -1,0 +1,8 @@
+{
+    "name": "Ledyba",
+    "hp": 40,
+    "attack": 20,
+    "defense": 30,
+    "front_sprite_path": "sprites/ledyba_front_default.png",
+    "back_sprite_path": "sprites/ledyba_back_default.png"
+}

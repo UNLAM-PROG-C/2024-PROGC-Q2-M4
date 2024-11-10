@@ -1,0 +1,8 @@
+{
+    "name": "Golduck",
+    "hp": 80,
+    "attack": 82,
+    "defense": 78,
+    "front_sprite_path": "sprites/golduck_front_default.png",
+    "back_sprite_path": "sprites/golduck_back_default.png"
+}

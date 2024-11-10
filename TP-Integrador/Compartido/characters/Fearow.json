@@ -1,0 +1,8 @@
+{
+    "name": "Fearow",
+    "hp": 65,
+    "attack": 90,
+    "defense": 65,
+    "front_sprite_path": "sprites/fearow_front_default.png",
+    "back_sprite_path": "sprites/fearow_back_default.png"
+}

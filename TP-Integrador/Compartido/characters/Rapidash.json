@@ -1,0 +1,8 @@
+{
+    "name": "Rapidash",
+    "hp": 65,
+    "attack": 100,
+    "defense": 70,
+    "front_sprite_path": "sprites/rapidash_front_default.png",
+    "back_sprite_path": "sprites/rapidash_back_default.png"
+}

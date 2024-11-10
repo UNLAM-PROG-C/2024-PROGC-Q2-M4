@@ -1,0 +1,8 @@
+{
+    "name": "Mewtwo",
+    "hp": 106,
+    "attack": 110,
+    "defense": 90,
+    "front_sprite_path": "sprites/mewtwo_front_default.png",
+    "back_sprite_path": "sprites/mewtwo_back_default.png"
+}

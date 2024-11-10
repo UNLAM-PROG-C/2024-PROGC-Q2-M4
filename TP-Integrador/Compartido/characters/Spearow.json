@@ -1,0 +1,8 @@
+{
+    "name": "Spearow",
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "front_sprite_path": "sprites/spearow_front_default.png",
+    "back_sprite_path": "sprites/spearow_back_default.png"
+}

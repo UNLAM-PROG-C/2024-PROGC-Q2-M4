@@ -1,0 +1,8 @@
+{
+    "name": "Mr-mime",
+    "hp": 40,
+    "attack": 45,
+    "defense": 65,
+    "front_sprite_path": "sprites/mr-mime_front_default.png",
+    "back_sprite_path": "sprites/mr-mime_back_default.png"
+}

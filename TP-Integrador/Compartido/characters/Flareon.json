@@ -1,0 +1,8 @@
+{
+    "name": "Flareon",
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "front_sprite_path": "sprites/flareon_front_default.png",
+    "back_sprite_path": "sprites/flareon_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Exeggcute",
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "front_sprite_path": "sprites/exeggcute_front_default.png",
+    "back_sprite_path": "sprites/exeggcute_back_default.png"
+}

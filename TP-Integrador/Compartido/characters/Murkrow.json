@@ -1,0 +1,8 @@
+{
+    "name": "Murkrow",
+    "hp": 60,
+    "attack": 85,
+    "defense": 42,
+    "front_sprite_path": "sprites/murkrow_front_default.png",
+    "back_sprite_path": "sprites/murkrow_back_default.png"
+}

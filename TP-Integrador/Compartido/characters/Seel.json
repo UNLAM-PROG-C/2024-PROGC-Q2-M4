@@ -1,0 +1,8 @@
+{
+    "name": "Seel",
+    "hp": 65,
+    "attack": 45,
+    "defense": 55,
+    "front_sprite_path": "sprites/seel_front_default.png",
+    "back_sprite_path": "sprites/seel_back_default.png"
+}

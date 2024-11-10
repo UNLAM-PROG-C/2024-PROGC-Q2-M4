@@ -1,0 +1,8 @@
+{
+    "name": "Grimer",
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "front_sprite_path": "sprites/grimer_front_default.png",
+    "back_sprite_path": "sprites/grimer_back_default.png"
+}

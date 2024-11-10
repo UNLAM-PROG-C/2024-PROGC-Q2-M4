@@ -1,0 +1,8 @@
+{
+    "name": "Vileplume",
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "front_sprite_path": "sprites/vileplume_front_default.png",
+    "back_sprite_path": "sprites/vileplume_back_default.png"
+}

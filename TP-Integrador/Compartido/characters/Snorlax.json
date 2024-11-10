@@ -1,0 +1,8 @@
+{
+    "name": "Snorlax",
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "front_sprite_path": "sprites/snorlax_front_default.png",
+    "back_sprite_path": "sprites/snorlax_back_default.png"
+}

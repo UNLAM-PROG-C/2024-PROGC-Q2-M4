@@ -1,0 +1,8 @@
+{
+    "name": "Eevee",
+    "hp": 55,
+    "attack": 55,
+    "defense": 50,
+    "front_sprite_path": "sprites/eevee_front_default.png",
+    "back_sprite_path": "sprites/eevee_back_default.png"
+}

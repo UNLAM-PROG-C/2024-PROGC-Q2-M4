@@ -1,0 +1,8 @@
+{
+    "name": "Marowak",
+    "hp": 60,
+    "attack": 80,
+    "defense": 110,
+    "front_sprite_path": "sprites/marowak_front_default.png",
+    "back_sprite_path": "sprites/marowak_back_default.png"
+}

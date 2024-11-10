@@ -1,0 +1,8 @@
+{
+    "name": "Sandshrew",
+    "hp": 50,
+    "attack": 75,
+    "defense": 85,
+    "front_sprite_path": "sprites/sandshrew_front_default.png",
+    "back_sprite_path": "sprites/sandshrew_back_default.png"
+}

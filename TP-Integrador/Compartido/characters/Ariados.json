@@ -1,0 +1,8 @@
+{
+    "name": "Ariados",
+    "hp": 70,
+    "attack": 90,
+    "defense": 70,
+    "front_sprite_path": "sprites/ariados_front_default.png",
+    "back_sprite_path": "sprites/ariados_back_default.png"
+}

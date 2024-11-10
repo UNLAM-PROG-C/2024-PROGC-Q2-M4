@@ -1,0 +1,8 @@
+{
+    "name": "Skiploom",
+    "hp": 55,
+    "attack": 45,
+    "defense": 50,
+    "front_sprite_path": "sprites/skiploom_front_default.png",
+    "back_sprite_path": "sprites/skiploom_back_default.png"
+}

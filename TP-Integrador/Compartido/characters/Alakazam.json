@@ -1,0 +1,8 @@
+{
+    "name": "Alakazam",
+    "hp": 55,
+    "attack": 50,
+    "defense": 45,
+    "front_sprite_path": "sprites/alakazam_front_default.png",
+    "back_sprite_path": "sprites/alakazam_back_default.png"
+}

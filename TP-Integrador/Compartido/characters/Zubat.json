@@ -1,0 +1,8 @@
+{
+    "name": "Zubat",
+    "hp": 40,
+    "attack": 45,
+    "defense": 35,
+    "front_sprite_path": "sprites/zubat_front_default.png",
+    "back_sprite_path": "sprites/zubat_back_default.png"
+}

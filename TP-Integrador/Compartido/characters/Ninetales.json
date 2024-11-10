@@ -1,0 +1,8 @@
+{
+    "name": "Ninetales",
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "front_sprite_path": "sprites/ninetales_front_default.png",
+    "back_sprite_path": "sprites/ninetales_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Yanma",
+    "hp": 65,
+    "attack": 65,
+    "defense": 45,
+    "front_sprite_path": "sprites/yanma_front_default.png",
+    "back_sprite_path": "sprites/yanma_back_default.png"
+}

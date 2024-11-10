@@ -1,0 +1,8 @@
+{
+    "name": "Noctowl",
+    "hp": 100,
+    "attack": 50,
+    "defense": 50,
+    "front_sprite_path": "sprites/noctowl_front_default.png",
+    "back_sprite_path": "sprites/noctowl_back_default.png"
+}

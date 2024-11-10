@@ -1,0 +1,8 @@
+{
+    "name": "Golbat",
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "front_sprite_path": "sprites/golbat_front_default.png",
+    "back_sprite_path": "sprites/golbat_back_default.png"
+}

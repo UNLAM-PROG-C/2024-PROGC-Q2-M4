@@ -1,0 +1,8 @@
+{
+    "name": "Voltorb",
+    "hp": 40,
+    "attack": 30,
+    "defense": 50,
+    "front_sprite_path": "sprites/voltorb_front_default.png",
+    "back_sprite_path": "sprites/voltorb_back_default.png"
+}

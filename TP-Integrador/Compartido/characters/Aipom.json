@@ -1,0 +1,8 @@
+{
+    "name": "Aipom",
+    "hp": 55,
+    "attack": 70,
+    "defense": 55,
+    "front_sprite_path": "sprites/aipom_front_default.png",
+    "back_sprite_path": "sprites/aipom_back_default.png"
+}
