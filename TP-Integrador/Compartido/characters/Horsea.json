@@ -1,0 +1,8 @@
+{
+    "name": "Horsea",
+    "hp": 30,
+    "attack": 40,
+    "defense": 70,
+    "front_sprite_path": "sprites/horsea_front_default.png",
+    "back_sprite_path": "sprites/horsea_back_default.png"
+}

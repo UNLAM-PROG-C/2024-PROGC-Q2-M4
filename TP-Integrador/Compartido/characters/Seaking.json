@@ -1,0 +1,8 @@
+{
+    "name": "Seaking",
+    "hp": 80,
+    "attack": 92,
+    "defense": 65,
+    "front_sprite_path": "sprites/seaking_front_default.png",
+    "back_sprite_path": "sprites/seaking_back_default.png"
+}

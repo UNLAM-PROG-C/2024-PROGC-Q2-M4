@@ -1,0 +1,8 @@
+{
+    "name": "Xatu",
+    "hp": 65,
+    "attack": 75,
+    "defense": 70,
+    "front_sprite_path": "sprites/xatu_front_default.png",
+    "back_sprite_path": "sprites/xatu_back_default.png"
+}

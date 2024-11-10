@@ -1,0 +1,8 @@
+{
+    "name": "Sandslash",
+    "hp": 75,
+    "attack": 100,
+    "defense": 110,
+    "front_sprite_path": "sprites/sandslash_front_default.png",
+    "back_sprite_path": "sprites/sandslash_back_default.png"
+}

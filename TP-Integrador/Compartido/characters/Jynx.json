@@ -1,0 +1,8 @@
+{
+    "name": "Jynx",
+    "hp": 65,
+    "attack": 50,
+    "defense": 35,
+    "front_sprite_path": "sprites/jynx_front_default.png",
+    "back_sprite_path": "sprites/jynx_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Charizard",
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "front_sprite_path": "sprites/charizard_front_default.png",
+    "back_sprite_path": "sprites/charizard_back_default.png"
+}

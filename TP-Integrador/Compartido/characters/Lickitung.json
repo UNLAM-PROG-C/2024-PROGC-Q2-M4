@@ -1,0 +1,8 @@
+{
+    "name": "Lickitung",
+    "hp": 90,
+    "attack": 55,
+    "defense": 75,
+    "front_sprite_path": "sprites/lickitung_front_default.png",
+    "back_sprite_path": "sprites/lickitung_back_default.png"
+}

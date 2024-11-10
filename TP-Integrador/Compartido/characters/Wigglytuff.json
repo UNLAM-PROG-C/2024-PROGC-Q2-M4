@@ -1,0 +1,8 @@
+{
+    "name": "Wigglytuff",
+    "hp": 140,
+    "attack": 70,
+    "defense": 45,
+    "front_sprite_path": "sprites/wigglytuff_front_default.png",
+    "back_sprite_path": "sprites/wigglytuff_back_default.png"
+}

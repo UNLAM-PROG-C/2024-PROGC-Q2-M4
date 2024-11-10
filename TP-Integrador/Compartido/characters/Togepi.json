@@ -1,0 +1,8 @@
+{
+    "name": "Togepi",
+    "hp": 35,
+    "attack": 20,
+    "defense": 65,
+    "front_sprite_path": "sprites/togepi_front_default.png",
+    "back_sprite_path": "sprites/togepi_back_default.png"
+}

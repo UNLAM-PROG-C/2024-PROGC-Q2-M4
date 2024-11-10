@@ -1,0 +1,8 @@
+{
+    "name": "Ditto",
+    "hp": 48,
+    "attack": 48,
+    "defense": 48,
+    "front_sprite_path": "sprites/ditto_front_default.png",
+    "back_sprite_path": "sprites/ditto_back_default.png"
+}

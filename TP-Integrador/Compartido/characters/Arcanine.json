@@ -1,0 +1,8 @@
+{
+    "name": "Arcanine",
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "front_sprite_path": "sprites/arcanine_front_default.png",
+    "back_sprite_path": "sprites/arcanine_back_default.png"
+}

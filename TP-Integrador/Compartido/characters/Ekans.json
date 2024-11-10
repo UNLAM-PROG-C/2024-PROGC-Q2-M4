@@ -1,0 +1,8 @@
+{
+    "name": "Ekans",
+    "hp": 35,
+    "attack": 60,
+    "defense": 44,
+    "front_sprite_path": "sprites/ekans_front_default.png",
+    "back_sprite_path": "sprites/ekans_back_default.png"
+}

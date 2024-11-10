@@ -1,0 +1,8 @@
+{
+    "name": "Persian",
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "front_sprite_path": "sprites/persian_front_default.png",
+    "back_sprite_path": "sprites/persian_back_default.png"
+}

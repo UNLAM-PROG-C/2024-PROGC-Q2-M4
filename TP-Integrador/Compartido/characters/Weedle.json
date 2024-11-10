@@ -1,0 +1,8 @@
+{
+    "name": "Weedle",
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "front_sprite_path": "sprites/weedle_front_default.png",
+    "back_sprite_path": "sprites/weedle_back_default.png"
+}

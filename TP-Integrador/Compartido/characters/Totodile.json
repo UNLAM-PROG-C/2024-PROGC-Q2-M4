@@ -1,0 +1,8 @@
+{
+    "name": "Totodile",
+    "hp": 50,
+    "attack": 65,
+    "defense": 64,
+    "front_sprite_path": "sprites/totodile_front_default.png",
+    "back_sprite_path": "sprites/totodile_back_default.png"
+}

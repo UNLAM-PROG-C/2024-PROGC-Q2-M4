@@ -1,0 +1,8 @@
+{
+    "name": "Ledian",
+    "hp": 55,
+    "attack": 35,
+    "defense": 50,
+    "front_sprite_path": "sprites/ledian_front_default.png",
+    "back_sprite_path": "sprites/ledian_back_default.png"
+}

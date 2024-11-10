@@ -1,0 +1,8 @@
+{
+    "name": "Arbok",
+    "hp": 60,
+    "attack": 95,
+    "defense": 69,
+    "front_sprite_path": "sprites/arbok_front_default.png",
+    "back_sprite_path": "sprites/arbok_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Aerodactyl",
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "front_sprite_path": "sprites/aerodactyl_front_default.png",
+    "back_sprite_path": "sprites/aerodactyl_back_default.png"
+}

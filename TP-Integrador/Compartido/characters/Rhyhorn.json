@@ -1,0 +1,8 @@
+{
+    "name": "Rhyhorn",
+    "hp": 80,
+    "attack": 85,
+    "defense": 95,
+    "front_sprite_path": "sprites/rhyhorn_front_default.png",
+    "back_sprite_path": "sprites/rhyhorn_back_default.png"
+}

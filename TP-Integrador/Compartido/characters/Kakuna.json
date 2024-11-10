@@ -1,0 +1,8 @@
+{
+    "name": "Kakuna",
+    "hp": 45,
+    "attack": 25,
+    "defense": 50,
+    "front_sprite_path": "sprites/kakuna_front_default.png",
+    "back_sprite_path": "sprites/kakuna_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Haunter",
+    "hp": 45,
+    "attack": 50,
+    "defense": 45,
+    "front_sprite_path": "sprites/haunter_front_default.png",
+    "back_sprite_path": "sprites/haunter_back_default.png"
+}

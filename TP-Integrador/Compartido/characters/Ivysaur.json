@@ -1,0 +1,8 @@
+{
+    "name": "Ivysaur",
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "front_sprite_path": "sprites/ivysaur_front_default.png",
+    "back_sprite_path": "sprites/ivysaur_back_default.png"
+}

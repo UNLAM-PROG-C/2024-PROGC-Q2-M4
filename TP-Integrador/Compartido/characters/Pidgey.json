@@ -1,0 +1,8 @@
+{
+    "name": "Pidgey",
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "front_sprite_path": "sprites/pidgey_front_default.png",
+    "back_sprite_path": "sprites/pidgey_back_default.png"
+}

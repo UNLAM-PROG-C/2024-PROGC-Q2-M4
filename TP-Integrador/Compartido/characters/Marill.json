@@ -1,0 +1,8 @@
+{
+    "name": "Marill",
+    "hp": 70,
+    "attack": 20,
+    "defense": 50,
+    "front_sprite_path": "sprites/marill_front_default.png",
+    "back_sprite_path": "sprites/marill_back_default.png"
+}

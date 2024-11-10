@@ -1,0 +1,8 @@
+{
+    "name": "Togetic",
+    "hp": 55,
+    "attack": 40,
+    "defense": 85,
+    "front_sprite_path": "sprites/togetic_front_default.png",
+    "back_sprite_path": "sprites/togetic_back_default.png"
+}

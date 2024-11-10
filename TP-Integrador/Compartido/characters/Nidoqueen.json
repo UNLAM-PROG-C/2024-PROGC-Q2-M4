@@ -1,0 +1,8 @@
+{
+    "name": "Nidoqueen",
+    "hp": 90,
+    "attack": 92,
+    "defense": 87,
+    "front_sprite_path": "sprites/nidoqueen_front_default.png",
+    "back_sprite_path": "sprites/nidoqueen_back_default.png"
+}

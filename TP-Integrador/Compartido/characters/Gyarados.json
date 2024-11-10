@@ -1,0 +1,8 @@
+{
+    "name": "Gyarados",
+    "hp": 95,
+    "attack": 125,
+    "defense": 79,
+    "front_sprite_path": "sprites/gyarados_front_default.png",
+    "back_sprite_path": "sprites/gyarados_back_default.png"
+}

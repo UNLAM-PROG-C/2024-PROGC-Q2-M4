@@ -1,0 +1,8 @@
+{
+    "name": "Magikarp",
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "front_sprite_path": "sprites/magikarp_front_default.png",
+    "back_sprite_path": "sprites/magikarp_back_default.png"
+}

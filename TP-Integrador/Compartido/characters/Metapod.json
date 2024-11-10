@@ -1,0 +1,8 @@
+{
+    "name": "Metapod",
+    "hp": 50,
+    "attack": 20,
+    "defense": 55,
+    "front_sprite_path": "sprites/metapod_front_default.png",
+    "back_sprite_path": "sprites/metapod_back_default.png"
+}

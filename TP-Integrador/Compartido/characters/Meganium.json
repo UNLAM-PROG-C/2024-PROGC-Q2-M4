@@ -1,0 +1,8 @@
+{
+    "name": "Meganium",
+    "hp": 80,
+    "attack": 82,
+    "defense": 100,
+    "front_sprite_path": "sprites/meganium_front_default.png",
+    "back_sprite_path": "sprites/meganium_back_default.png"
+}

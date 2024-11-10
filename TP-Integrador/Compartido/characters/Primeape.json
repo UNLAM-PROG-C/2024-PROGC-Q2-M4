@@ -1,0 +1,8 @@
+{
+    "name": "Primeape",
+    "hp": 65,
+    "attack": 105,
+    "defense": 60,
+    "front_sprite_path": "sprites/primeape_front_default.png",
+    "back_sprite_path": "sprites/primeape_back_default.png"
+}

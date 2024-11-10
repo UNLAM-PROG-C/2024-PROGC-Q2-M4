@@ -1,0 +1,8 @@
+{
+    "name": "Pidgeotto",
+    "hp": 63,
+    "attack": 60,
+    "defense": 55,
+    "front_sprite_path": "sprites/pidgeotto_front_default.png",
+    "back_sprite_path": "sprites/pidgeotto_back_default.png"
+}

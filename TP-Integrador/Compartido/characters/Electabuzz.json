@@ -1,0 +1,8 @@
+{
+    "name": "Electabuzz",
+    "hp": 65,
+    "attack": 83,
+    "defense": 57,
+    "front_sprite_path": "sprites/electabuzz_front_default.png",
+    "back_sprite_path": "sprites/electabuzz_back_default.png"
+}

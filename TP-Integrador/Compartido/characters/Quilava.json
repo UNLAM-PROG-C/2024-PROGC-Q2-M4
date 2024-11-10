@@ -1,0 +1,8 @@
+{
+    "name": "Quilava",
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "front_sprite_path": "sprites/quilava_front_default.png",
+    "back_sprite_path": "sprites/quilava_back_default.png"
+}

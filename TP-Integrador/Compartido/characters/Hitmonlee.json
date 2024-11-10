@@ -1,0 +1,8 @@
+{
+    "name": "Hitmonlee",
+    "hp": 50,
+    "attack": 120,
+    "defense": 53,
+    "front_sprite_path": "sprites/hitmonlee_front_default.png",
+    "back_sprite_path": "sprites/hitmonlee_back_default.png"
+}

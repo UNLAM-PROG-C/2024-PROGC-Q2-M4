@@ -1,0 +1,8 @@
+{
+    "name": "Staryu",
+    "hp": 30,
+    "attack": 45,
+    "defense": 55,
+    "front_sprite_path": "sprites/staryu_front_default.png",
+    "back_sprite_path": "sprites/staryu_back_default.png"
+}

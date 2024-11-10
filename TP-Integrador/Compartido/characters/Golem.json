@@ -1,0 +1,8 @@
+{
+    "name": "Golem",
+    "hp": 80,
+    "attack": 120,
+    "defense": 130,
+    "front_sprite_path": "sprites/golem_front_default.png",
+    "back_sprite_path": "sprites/golem_back_default.png"
+}

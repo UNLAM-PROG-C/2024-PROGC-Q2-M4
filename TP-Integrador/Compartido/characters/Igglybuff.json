@@ -1,0 +1,8 @@
+{
+    "name": "Igglybuff",
+    "hp": 90,
+    "attack": 30,
+    "defense": 15,
+    "front_sprite_path": "sprites/igglybuff_front_default.png",
+    "back_sprite_path": "sprites/igglybuff_back_default.png"
+}

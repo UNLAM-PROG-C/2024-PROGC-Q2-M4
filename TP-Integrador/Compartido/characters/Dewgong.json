@@ -1,0 +1,8 @@
+{
+    "name": "Dewgong",
+    "hp": 90,
+    "attack": 70,
+    "defense": 80,
+    "front_sprite_path": "sprites/dewgong_front_default.png",
+    "back_sprite_path": "sprites/dewgong_back_default.png"
+}

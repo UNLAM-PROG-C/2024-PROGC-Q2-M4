@@ -1,0 +1,8 @@
+{
+    "name": "Koffing",
+    "hp": 40,
+    "attack": 65,
+    "defense": 95,
+    "front_sprite_path": "sprites/koffing_front_default.png",
+    "back_sprite_path": "sprites/koffing_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Charmeleon",
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "front_sprite_path": "sprites/charmeleon_front_default.png",
+    "back_sprite_path": "sprites/charmeleon_back_default.png"
+}

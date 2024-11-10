@@ -1,0 +1,8 @@
+{
+    "name": "Goldeen",
+    "hp": 45,
+    "attack": 67,
+    "defense": 60,
+    "front_sprite_path": "sprites/goldeen_front_default.png",
+    "back_sprite_path": "sprites/goldeen_back_default.png"
+}

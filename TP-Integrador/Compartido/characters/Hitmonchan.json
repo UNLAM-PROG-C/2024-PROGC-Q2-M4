@@ -1,0 +1,8 @@
+{
+    "name": "Hitmonchan",
+    "hp": 50,
+    "attack": 105,
+    "defense": 79,
+    "front_sprite_path": "sprites/hitmonchan_front_default.png",
+    "back_sprite_path": "sprites/hitmonchan_back_default.png"
+}

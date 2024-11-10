@@ -1,0 +1,8 @@
+{
+    "name": "Azumarill",
+    "hp": 100,
+    "attack": 50,
+    "defense": 80,
+    "front_sprite_path": "sprites/azumarill_front_default.png",
+    "back_sprite_path": "sprites/azumarill_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Omastar",
+    "hp": 70,
+    "attack": 60,
+    "defense": 125,
+    "front_sprite_path": "sprites/omastar_front_default.png",
+    "back_sprite_path": "sprites/omastar_back_default.png"
+}

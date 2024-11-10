@@ -1,0 +1,8 @@
+{
+    "name": "Nidoking",
+    "hp": 81,
+    "attack": 102,
+    "defense": 77,
+    "front_sprite_path": "sprites/nidoking_front_default.png",
+    "back_sprite_path": "sprites/nidoking_back_default.png"
+}

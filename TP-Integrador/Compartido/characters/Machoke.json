@@ -1,0 +1,8 @@
+{
+    "name": "Machoke",
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "front_sprite_path": "sprites/machoke_front_default.png",
+    "back_sprite_path": "sprites/machoke_back_default.png"
+}

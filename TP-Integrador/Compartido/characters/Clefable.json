@@ -1,0 +1,8 @@
+{
+    "name": "Clefable",
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "front_sprite_path": "sprites/clefable_front_default.png",
+    "back_sprite_path": "sprites/clefable_back_default.png"
+}

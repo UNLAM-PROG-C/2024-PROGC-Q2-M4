@@ -1,0 +1,8 @@
+{
+    "name": "Blastoise",
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "front_sprite_path": "sprites/blastoise_front_default.png",
+    "back_sprite_path": "sprites/blastoise_back_default.png"
+}

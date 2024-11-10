@@ -1,0 +1,8 @@
+{
+    "name": "Lanturn",
+    "hp": 125,
+    "attack": 58,
+    "defense": 58,
+    "front_sprite_path": "sprites/lanturn_front_default.png",
+    "back_sprite_path": "sprites/lanturn_back_default.png"
+}

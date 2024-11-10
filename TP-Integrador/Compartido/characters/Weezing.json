@@ -1,0 +1,8 @@
+{
+    "name": "Weezing",
+    "hp": 65,
+    "attack": 90,
+    "defense": 120,
+    "front_sprite_path": "sprites/weezing_front_default.png",
+    "back_sprite_path": "sprites/weezing_back_default.png"
+}

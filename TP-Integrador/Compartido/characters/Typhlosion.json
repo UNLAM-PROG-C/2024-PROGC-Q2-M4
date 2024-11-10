@@ -1,0 +1,8 @@
+{
+    "name": "Typhlosion",
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "front_sprite_path": "sprites/typhlosion_front_default.png",
+    "back_sprite_path": "sprites/typhlosion_back_default.png"
+}

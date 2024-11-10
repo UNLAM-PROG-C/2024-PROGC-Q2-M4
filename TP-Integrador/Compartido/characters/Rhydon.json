@@ -1,0 +1,8 @@
+{
+    "name": "Rhydon",
+    "hp": 105,
+    "attack": 130,
+    "defense": 120,
+    "front_sprite_path": "sprites/rhydon_front_default.png",
+    "back_sprite_path": "sprites/rhydon_back_default.png"
+}

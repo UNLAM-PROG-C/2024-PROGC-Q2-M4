@@ -1,0 +1,8 @@
+{
+    "name": "Shellder",
+    "hp": 30,
+    "attack": 65,
+    "defense": 100,
+    "front_sprite_path": "sprites/shellder_front_default.png",
+    "back_sprite_path": "sprites/shellder_back_default.png"
+}

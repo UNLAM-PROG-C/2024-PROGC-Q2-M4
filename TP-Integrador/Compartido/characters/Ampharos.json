@@ -1,0 +1,8 @@
+{
+    "name": "Ampharos",
+    "hp": 90,
+    "attack": 75,
+    "defense": 85,
+    "front_sprite_path": "sprites/ampharos_front_default.png",
+    "back_sprite_path": "sprites/ampharos_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Mareep",
+    "hp": 55,
+    "attack": 40,
+    "defense": 40,
+    "front_sprite_path": "sprites/mareep_front_default.png",
+    "back_sprite_path": "sprites/mareep_back_default.png"
+}

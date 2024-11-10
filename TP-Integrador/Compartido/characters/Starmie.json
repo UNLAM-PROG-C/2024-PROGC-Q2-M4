@@ -1,0 +1,8 @@
+{
+    "name": "Starmie",
+    "hp": 60,
+    "attack": 75,
+    "defense": 85,
+    "front_sprite_path": "sprites/starmie_front_default.png",
+    "back_sprite_path": "sprites/starmie_back_default.png"
+}

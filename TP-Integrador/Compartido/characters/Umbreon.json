@@ -1,0 +1,8 @@
+{
+    "name": "Umbreon",
+    "hp": 95,
+    "attack": 65,
+    "defense": 110,
+    "front_sprite_path": "sprites/umbreon_front_default.png",
+    "back_sprite_path": "sprites/umbreon_back_default.png"
+}

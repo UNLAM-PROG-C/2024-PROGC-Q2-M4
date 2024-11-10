@@ -1,0 +1,8 @@
+{
+    "name": "Hoothoot",
+    "hp": 60,
+    "attack": 30,
+    "defense": 30,
+    "front_sprite_path": "sprites/hoothoot_front_default.png",
+    "back_sprite_path": "sprites/hoothoot_back_default.png"
+}

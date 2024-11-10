@@ -1,0 +1,8 @@
+{
+    "name": "Chikorita",
+    "hp": 45,
+    "attack": 49,
+    "defense": 65,
+    "front_sprite_path": "sprites/chikorita_front_default.png",
+    "back_sprite_path": "sprites/chikorita_back_default.png"
+}

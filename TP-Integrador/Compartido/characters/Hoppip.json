@@ -1,0 +1,8 @@
+{
+    "name": "Hoppip",
+    "hp": 35,
+    "attack": 35,
+    "defense": 40,
+    "front_sprite_path": "sprites/hoppip_front_default.png",
+    "back_sprite_path": "sprites/hoppip_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Chinchou",
+    "hp": 75,
+    "attack": 38,
+    "defense": 38,
+    "front_sprite_path": "sprites/chinchou_front_default.png",
+    "back_sprite_path": "sprites/chinchou_back_default.png"
+}

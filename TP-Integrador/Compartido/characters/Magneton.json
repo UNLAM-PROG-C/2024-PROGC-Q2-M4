@@ -1,0 +1,8 @@
+{
+    "name": "Magneton",
+    "hp": 50,
+    "attack": 60,
+    "defense": 95,
+    "front_sprite_path": "sprites/magneton_front_default.png",
+    "back_sprite_path": "sprites/magneton_back_default.png"
+}

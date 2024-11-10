@@ -1,0 +1,8 @@
+{
+    "name": "Politoed",
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "front_sprite_path": "sprites/politoed_front_default.png",
+    "back_sprite_path": "sprites/politoed_back_default.png"
+}

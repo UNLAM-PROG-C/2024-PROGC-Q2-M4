@@ -1,0 +1,8 @@
+{
+    "name": "Nidorino",
+    "hp": 61,
+    "attack": 72,
+    "defense": 57,
+    "front_sprite_path": "sprites/nidorino_front_default.png",
+    "back_sprite_path": "sprites/nidorino_back_default.png"
+}

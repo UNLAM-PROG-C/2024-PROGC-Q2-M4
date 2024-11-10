@@ -1,0 +1,8 @@
+{
+    "name": "Oddish",
+    "hp": 45,
+    "attack": 50,
+    "defense": 55,
+    "front_sprite_path": "sprites/oddish_front_default.png",
+    "back_sprite_path": "sprites/oddish_back_default.png"
+}

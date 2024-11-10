@@ -1,0 +1,8 @@
+{
+    "name": "Omanyte",
+    "hp": 35,
+    "attack": 40,
+    "defense": 100,
+    "front_sprite_path": "sprites/omanyte_front_default.png",
+    "back_sprite_path": "sprites/omanyte_back_default.png"
+}

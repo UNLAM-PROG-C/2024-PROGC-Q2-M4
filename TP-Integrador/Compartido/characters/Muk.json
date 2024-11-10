@@ -1,0 +1,8 @@
+{
+    "name": "Muk",
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "front_sprite_path": "sprites/muk_front_default.png",
+    "back_sprite_path": "sprites/muk_back_default.png"
+}

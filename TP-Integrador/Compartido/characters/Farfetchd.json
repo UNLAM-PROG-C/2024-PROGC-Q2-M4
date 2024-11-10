@@ -1,0 +1,8 @@
+{
+    "name": "Farfetchd",
+    "hp": 52,
+    "attack": 90,
+    "defense": 55,
+    "front_sprite_path": "sprites/farfetchd_front_default.png",
+    "back_sprite_path": "sprites/farfetchd_back_default.png"
+}

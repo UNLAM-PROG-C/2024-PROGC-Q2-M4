@@ -1,0 +1,8 @@
+{
+    "name": "Dragonair",
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "front_sprite_path": "sprites/dragonair_front_default.png",
+    "back_sprite_path": "sprites/dragonair_back_default.png"
+}

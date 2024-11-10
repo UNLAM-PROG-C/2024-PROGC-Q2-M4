@@ -1,0 +1,8 @@
+{
+    "name": "Sudowoodo",
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "front_sprite_path": "sprites/sudowoodo_front_default.png",
+    "back_sprite_path": "sprites/sudowoodo_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Machamp",
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "front_sprite_path": "sprites/machamp_front_default.png",
+    "back_sprite_path": "sprites/machamp_back_default.png"
+}

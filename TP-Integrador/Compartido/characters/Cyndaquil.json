@@ -1,0 +1,8 @@
+{
+    "name": "Cyndaquil",
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "front_sprite_path": "sprites/cyndaquil_front_default.png",
+    "back_sprite_path": "sprites/cyndaquil_back_default.png"
+}

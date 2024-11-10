@@ -1,0 +1,8 @@
+{
+    "name": "Drowzee",
+    "hp": 60,
+    "attack": 48,
+    "defense": 45,
+    "front_sprite_path": "sprites/drowzee_front_default.png",
+    "back_sprite_path": "sprites/drowzee_back_default.png"
+}

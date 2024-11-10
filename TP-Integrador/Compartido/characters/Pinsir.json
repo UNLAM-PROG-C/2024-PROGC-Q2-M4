@@ -1,0 +1,8 @@
+{
+    "name": "Pinsir",
+    "hp": 65,
+    "attack": 125,
+    "defense": 100,
+    "front_sprite_path": "sprites/pinsir_front_default.png",
+    "back_sprite_path": "sprites/pinsir_back_default.png"
+}

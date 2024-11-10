@@ -1,0 +1,8 @@
+{
+    "name": "Natu",
+    "hp": 40,
+    "attack": 50,
+    "defense": 45,
+    "front_sprite_path": "sprites/natu_front_default.png",
+    "back_sprite_path": "sprites/natu_back_default.png"
+}

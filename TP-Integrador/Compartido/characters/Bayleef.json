@@ -1,0 +1,8 @@
+{
+    "name": "Bayleef",
+    "hp": 60,
+    "attack": 62,
+    "defense": 80,
+    "front_sprite_path": "sprites/bayleef_front_default.png",
+    "back_sprite_path": "sprites/bayleef_back_default.png"
+}

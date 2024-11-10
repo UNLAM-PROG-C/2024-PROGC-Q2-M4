@@ -1,0 +1,8 @@
+{
+    "name": "Paras",
+    "hp": 35,
+    "attack": 70,
+    "defense": 55,
+    "front_sprite_path": "sprites/paras_front_default.png",
+    "back_sprite_path": "sprites/paras_back_default.png"
+}

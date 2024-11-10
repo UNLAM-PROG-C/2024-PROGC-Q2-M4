@@ -1,0 +1,8 @@
+{
+    "name": "Pidgeot",
+    "hp": 83,
+    "attack": 80,
+    "defense": 75,
+    "front_sprite_path": "sprites/pidgeot_front_default.png",
+    "back_sprite_path": "sprites/pidgeot_back_default.png"
+}

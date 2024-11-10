@@ -1,0 +1,8 @@
+{
+    "name": "Butterfree",
+    "hp": 60,
+    "attack": 45,
+    "defense": 50,
+    "front_sprite_path": "sprites/butterfree_front_default.png",
+    "back_sprite_path": "sprites/butterfree_back_default.png"
+}

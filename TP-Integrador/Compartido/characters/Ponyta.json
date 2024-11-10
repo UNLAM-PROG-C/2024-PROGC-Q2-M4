@@ -1,0 +1,8 @@
+{
+    "name": "Ponyta",
+    "hp": 50,
+    "attack": 85,
+    "defense": 55,
+    "front_sprite_path": "sprites/ponyta_front_default.png",
+    "back_sprite_path": "sprites/ponyta_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Tauros",
+    "hp": 75,
+    "attack": 100,
+    "defense": 95,
+    "front_sprite_path": "sprites/tauros_front_default.png",
+    "back_sprite_path": "sprites/tauros_back_default.png"
+}

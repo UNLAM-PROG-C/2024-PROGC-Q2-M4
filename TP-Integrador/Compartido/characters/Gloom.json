@@ -1,0 +1,8 @@
+{
+    "name": "Gloom",
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "front_sprite_path": "sprites/gloom_front_default.png",
+    "back_sprite_path": "sprites/gloom_back_default.png"
+}

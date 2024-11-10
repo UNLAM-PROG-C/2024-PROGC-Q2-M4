@@ -1,0 +1,8 @@
+{
+    "name": "Machop",
+    "hp": 70,
+    "attack": 80,
+    "defense": 50,
+    "front_sprite_path": "sprites/machop_front_default.png",
+    "back_sprite_path": "sprites/machop_back_default.png"
+}

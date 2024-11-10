@@ -1,0 +1,8 @@
+{
+    "name": "Wartortle",
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "front_sprite_path": "sprites/wartortle_front_default.png",
+    "back_sprite_path": "sprites/wartortle_back_default.png"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Wooper",
+    "hp": 55,
+    "attack": 45,
+    "defense": 45,
+    "front_sprite_path": "sprites/wooper_front_default.png",
+    "back_sprite_path": "sprites/wooper_back_default.png"
+}

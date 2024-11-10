@@ -1,0 +1,8 @@
+{
+    "name": "Lapras",
+    "hp": 130,
+    "attack": 85,
+    "defense": 80,
+    "front_sprite_path": "sprites/lapras_front_default.png",
+    "back_sprite_path": "sprites/lapras_back_default.png"
+}

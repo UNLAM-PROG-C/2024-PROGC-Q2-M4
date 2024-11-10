@@ -1,0 +1,8 @@
+{
+    "name": "Doduo",
+    "hp": 35,
+    "attack": 85,
+    "defense": 45,
+    "front_sprite_path": "sprites/doduo_front_default.png",
+    "back_sprite_path": "sprites/doduo_back_default.png"
+}

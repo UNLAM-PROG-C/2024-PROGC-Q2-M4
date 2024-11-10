@@ -1,0 +1,8 @@
+{
+    "name": "Vulpix",
+    "hp": 38,
+    "attack": 41,
+    "defense": 40,
+    "front_sprite_path": "sprites/vulpix_front_default.png",
+    "back_sprite_path": "sprites/vulpix_back_default.png"
+}

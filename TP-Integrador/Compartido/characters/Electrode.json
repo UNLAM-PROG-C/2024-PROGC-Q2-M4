@@ -1,0 +1,8 @@
+{
+    "name": "Electrode",
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "front_sprite_path": "sprites/electrode_front_default.png",
+    "back_sprite_path": "sprites/electrode_back_default.png"
+}

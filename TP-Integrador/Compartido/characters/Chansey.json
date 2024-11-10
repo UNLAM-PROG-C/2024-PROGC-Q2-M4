@@ -1,0 +1,8 @@
+{
+    "name": "Chansey",
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "front_sprite_path": "sprites/chansey_front_default.png",
+    "back_sprite_path": "sprites/chansey_back_default.png"
+}

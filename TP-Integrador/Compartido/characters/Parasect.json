@@ -1,0 +1,8 @@
+{
+    "name": "Parasect",
+    "hp": 60,
+    "attack": 95,
+    "defense": 80,
+    "front_sprite_path": "sprites/parasect_front_default.png",
+    "back_sprite_path": "sprites/parasect_back_default.png"
+}

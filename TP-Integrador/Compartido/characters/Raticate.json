@@ -1,0 +1,8 @@
+{
+    "name": "Raticate",
+    "hp": 55,
+    "attack": 81,
+    "defense": 60,
+    "front_sprite_path": "sprites/raticate_front_default.png",
+    "back_sprite_path": "sprites/raticate_back_default.png"
+}

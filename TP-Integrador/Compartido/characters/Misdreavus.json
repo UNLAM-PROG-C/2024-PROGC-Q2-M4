@@ -1,0 +1,8 @@
+{
+    "name": "Misdreavus",
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "front_sprite_path": "sprites/misdreavus_front_default.png",
+    "back_sprite_path": "sprites/misdreavus_back_default.png"
+}

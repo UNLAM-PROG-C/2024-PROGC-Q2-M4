@@ -1,0 +1,8 @@
+{
+    "name": "Croconaw",
+    "hp": 65,
+    "attack": 80,
+    "defense": 80,
+    "front_sprite_path": "sprites/croconaw_front_default.png",
+    "back_sprite_path": "sprites/croconaw_back_default.png"
+}
