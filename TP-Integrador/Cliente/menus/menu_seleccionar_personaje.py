@@ -8,23 +8,17 @@ import pygame
 from menus.menu_salida import confirmar_salida
 from clases.texto import Texto
 
-# =========================================== Variables ===========================================
-
 imagen_fondo = pygame.image.load(constantes.RUTA_FONDO + "background_waterfalls" + constantes.EXTENSION_JPG)
 imagen_fondo = pygame.transform.scale(imagen_fondo, (constantes.ANCHO_VENTANA, constantes.ALTO_VENTANA))
 personajes = contexto_juego.obtener_personajes()
-seleccion_actual = 0 # Selección actual del personaje
-primer_indice_visible = 0 # Índice del primer personaje visible
+seleccion_actual = 0 
+primer_indice_visible = 0 
 ventana = contexto_juego.obtener_ventana()
 
-# =========================================== Interfaz ===========================================
 
 def cargar_lista_personajes(sprites):
-
-    # Posición X de la lista de personajes
     centro_x_menu_personajes = constantes.ANCHO_VENTANA // 2 - constantes.POSICION_X_MENU_PERSONAJES
     
-    # Posición Y de la lista de personajes
     base_posicion_y_menu_personajes = constantes.ALTO_VENTANA // 2 - (constantes.CANTIDAD_PERSONAJES_VISIBLES * 100) // 2 + 50
     
     for i in range(primer_indice_visible, min(primer_indice_visible + constantes.CANTIDAD_PERSONAJES_VISIBLES, len(personajes))):
@@ -45,22 +39,17 @@ def cargar_lista_personajes(sprites):
         nombre_personaje.dibujar()
         
         if seleccion_actual == i:
-            # Centrar el rectángulo de selección respecto al texto
-            rect_x = centro_x_menu_personajes - 20  # Ajusta este valor según sea necesario
+            rect_x = centro_x_menu_personajes - 20
             rect_y = posicion_y_menu_personajes - 10
             pygame.draw.rect(ventana, constantes.COLOR_NEGRO_TUPLA, (rect_x, rect_y, 300, 50), 2)
 
-    # Dibuja el sprite del personaje seleccionado en una posición fija
     personaje_seleccionado = personajes[seleccion_actual]
     imagen_a_dibujar = sprites[personaje_seleccionado.nombre]["front"]
     imagen_redimensionada = pygame.transform.scale(imagen_a_dibujar, (constantes.TAMANO_X_PERSONAJE_SELECCIONADO, constantes.TAMANO_Y_PERSONAJE_SELECCIONADO))
     
-    # Centro horizontal del sprite seleccionado
     sprite_x = constantes.ANCHO_VENTANA // 2 + constantes.POSICION_X_SPRITE_PERSONAJE_SELECCIONADO
     sprite_y = constantes.ALTO_VENTANA // 2 - constantes.TAMANO_Y_PERSONAJE_SELECCIONADO // 2
     ventana.blit(imagen_redimensionada, (sprite_x, sprite_y))
-
-# =========================================== Eventos ===========================================
 
 def actualizar_indice():
     """ Actualiza el índice del primer personaje visible basado en la selección actual. """
@@ -79,14 +68,13 @@ def manejar_eventos(estado_juego):
         if event.type == pygame.QUIT:
             confirmar_salida(estado_juego)
             if estado_juego.accion == constantes.ACCION_SALIR_JUEGO:
-                return  # Termina el ciclo principal si se confirma la salida
+                return 
 
         if event.type == pygame.KEYDOWN:
             if event.key in (pygame.K_DOWN, pygame.K_UP):
                 direccion = 1 if event.key == pygame.K_DOWN else -1
                 seleccion_actual = (seleccion_actual + direccion) % constantes.NUMERO_DE_PERSONAJES
 
-                # Actualizar el índice de desplazamiento visible
                 actualizar_indice()
 
             elif event.key == pygame.K_RETURN:
@@ -95,10 +83,8 @@ def manejar_eventos(estado_juego):
                 estado_juego.indice_personaje_elegido = seleccion_actual
                 return
 
-# =========================================== Función Principal ===========================================
 
 def menu_selector(estado_juego):
-    """ Muestra el menú de selección de personajes y actualiza el estado del juego con el personaje seleccionado. """
     pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
 
     texto_elige_tu_personaje = Texto(
@@ -111,7 +97,7 @@ def menu_selector(estado_juego):
         constantes.TEXTO_CENTRADO
     )
 
-    ventana.fill(constantes.COLOR_BLANCO_TUPLA) # Limpia la pantalla
+    ventana.fill(constantes.COLOR_BLANCO_TUPLA)
 
     while True:
 

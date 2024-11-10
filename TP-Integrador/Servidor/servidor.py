@@ -8,14 +8,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Compartido import contexto_juego
 from Compartido import constantes
 from Compartido import personaje
- 
-# ===================================== Configuración =====================================
 
 socket_servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket_servidor.bind(("127.0.0.1", 5000))
 socket_servidor.listen(2)
 
-# Constantes
 MI_TURNO = 0
 TURNO_ENEMIGO = 1
 CANTIDAD_DE_JUGADORES = 2
@@ -31,7 +28,6 @@ CLAVES = {
     "INDICE_PERSONAJE_JUGADOR": "INDICE_PERSONAJE_JUGADOR"
 }
 
-# Variables globales
 clientes = []
 jugadores = []
 indice_jugadores = []
@@ -43,13 +39,11 @@ accion_actual = ""
 lock = threading.Lock()
 barrera = threading.Barrier(2)
 
-# ===================================== Señales =====================================
 
 def cerrar_servidor(signal, frame):
     socket_servidor.close()
     sys.exit(0)
 
-# ===================================== Manejador del Cliente =====================================
 
 def manejador_cliente(conexion, direccion, id_cliente):
     global turno_actual, jugadores, indice_jugadores, cantidad_conexiones, jugando, accion_actual
@@ -58,10 +52,9 @@ def manejador_cliente(conexion, direccion, id_cliente):
 
     while jugando:
 
-        # Recibir personaje elegido del cliente
         datos = conexion.recv(1024).decode().split(":")[1]
 
-        conexion.send("ACK".encode())  # Confirmación de recepción
+        conexion.send("ACK".encode()) 
         with lock:
             indice_jugadores.insert(id_cliente, int(datos))
             jugadores.insert(id_cliente, copy.deepcopy(personajes[int(datos)]))
@@ -71,19 +64,18 @@ def manejador_cliente(conexion, direccion, id_cliente):
 
         id_enemigo = 1 if id_cliente == 0 else 0
 
-        # Enviar información de personaje y confirmar turnos
         print("ID Cliente: " + str(id_cliente))
         conexion.send(f"{CLAVES['ID_CLIENTE']}:{id_cliente}".encode())
-        conexion.recv(1024)  # Confirmación de cliente
+        conexion.recv(1024)
 
         conexion.send(f"{CLAVES['ID_ENEMIGO']}:{id_enemigo}".encode())
-        conexion.recv(1024)  # Confirmación de cliente
+        conexion.recv(1024) 
 
         conexion.send(f"{CLAVES['INDICE_PERSONAJE_JUGADOR']}:{indice_jugadores[id_cliente]}".encode())
-        conexion.recv(1024)  # Confirmación de cliente
+        conexion.recv(1024) 
         
         conexion.send(f"{CLAVES['INDICE_PERSONAJE_ENEMIGO']}:{indice_jugadores[id_enemigo]}".encode())
-        conexion.recv(1024)  # Confirmación de cliente
+        conexion.recv(1024)  
 
         with lock:
             if turno_actual == id_cliente:
@@ -91,16 +83,15 @@ def manejador_cliente(conexion, direccion, id_cliente):
             else:
                 conexion.send(f"{CLAVES['TURNO_JUGADOR']}:{False}".encode())
 
-        conexion.recv(1024)  # Confirmación de cliente ACK Del turno
+        conexion.recv(1024) 
 
         try:
             while True:
-                # Hilo turno tuyo
                 if turno_actual == id_cliente:
                     print("Entre a la batalla")
                     accion_actual = conexion.recv(1024).decode()
                     print("Accion batalla:" + str(accion_actual))
-                    conexion.send("ACK".encode())  # Confirmación de recepción
+                    conexion.send("ACK".encode()) 
                     
                     id_enemigo = int(1 if id_cliente == 0 else 0)
                     
@@ -120,11 +111,10 @@ def manejador_cliente(conexion, direccion, id_cliente):
                         vida_enemigo = jugadores[id_enemigo].vida
 
                     conexion.send(f"{CLAVES['ACTUALIZACION_VIDA']}:{id_cliente}:{vida_cliente}:{id_enemigo}:{vida_enemigo}:{accion_actual}".encode())
-                    conexion.recv(1024).decode()  # Confirmación de cliente
+                    conexion.recv(1024).decode() 
 
                     print("Pase los send y recv")
 
-                    # Alterna el turno
                     with lock:
                         turno_actual = 1 - turno_actual
 
@@ -140,7 +130,6 @@ def manejador_cliente(conexion, direccion, id_cliente):
                     conexion.send(f"{CLAVES['ACTUALIZACION_VIDA']}:{id_cliente}:{vida_cliente}:{id_enemigo}:{vida_enemigo}:{accion_actual}".encode())
                     conexion.recv(1024).decode()  
             
-                # Ambos hilos
                 if int(jugadores[id_cliente].vida) <= 0 or int(jugadores[id_enemigo].vida) <= 0:
                     break
     
@@ -152,9 +141,8 @@ def manejador_cliente(conexion, direccion, id_cliente):
                     else:
                         conexion.send(f"{CLAVES['TURNO_JUGADOR']}:{False}".encode()) 
                 
-                conexion.recv(1024)  # Confirmación de cliente
+                conexion.recv(1024) 
             
-            #Aca es para avisar si sigue jugando
             respuesta = conexion.recv(1024).decode()
             conexion.send("ACK".encode())
 
@@ -169,7 +157,6 @@ def manejador_cliente(conexion, direccion, id_cliente):
 
                 with lock:
                     indice_jugadores.clear()
-                # manejador_cliente(conexion, direccion, id_cliente)
             else:
                 jugando = False
                 print("No sigue jugando")
@@ -181,10 +168,8 @@ def manejador_cliente(conexion, direccion, id_cliente):
         cantidad_conexiones -= 1
     conexion.close()
     
-# ===================================== Servidor =====================================
 
 def iniciar_servidor():
-    """Inicia el servidor y espera las conexiones de los clientes."""
     print("Servidor esperando conexiones...")
     global cantidad_conexiones
     while True:
@@ -194,7 +179,7 @@ def iniciar_servidor():
             with lock:
                 cantidad_conexiones += 1
         else:
-            conexion, _ = socket_servidor.accept()  # Acepta conexión pero cierra inmediatamente
+            conexion, _ = socket_servidor.accept() 
             conexion.close()
 
 if __name__ == "__main__":

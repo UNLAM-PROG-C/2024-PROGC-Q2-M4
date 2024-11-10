@@ -11,11 +11,7 @@ from clases.fondo_animado import FondoAnimado
 
 ventana = contexto_juego.obtener_ventana()
 
-# ===============================
-
-# Crea los botones de confirmación y cancelación para la ventana de salida
 def crear_botones():
-    # Crear los textos para los botones
     texto_confirmar = Texto(constantes.ACEPTAR, constantes.FUENTE_JUEGO, constantes.TAMANO_FUENTE_BOTONES_MENU_PRINCIPAL, constantes.COLOR_BLANCO_TUPLA)
     texto_cancelar = Texto(constantes.CANCELAR, constantes.FUENTE_JUEGO, constantes.TAMANO_FUENTE_BOTONES_MENU_PRINCIPAL, constantes.COLOR_BLANCO_TUPLA)
 
@@ -49,16 +45,12 @@ def crear_botones():
         constantes.ACCION_CANCELAR
     )
 
-    # Posicionar los botones en la pantalla
-
-# Dibuja todos los elementos en pantalla
 def dibujar_elementos(fondo_animado, texto_confirmar_salida, botones):
     fondo_animado.dibujar_fondo()
     texto_confirmar_salida.dibujar()
     for boton in botones:
         boton.dibujar()
 
-# Maneja los eventos de la ventana de confirmación
 def manejar_eventos(botones):
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
@@ -68,12 +60,8 @@ def manejar_eventos(botones):
                 if boton.es_presionado():
                     return boton.accion
     utilidades.verificar_cambio_icono_cursor(botones)
-    return None  # Indica que no se ha tomado ninguna acción
+    return None 
 
-
-# ==================================
-
-# Función para confirmar salida
 def confirmar_salida(estado_juego):
     if not estado_juego.fondo_animado:
         estado_juego.fondo_animado = FondoAnimado(

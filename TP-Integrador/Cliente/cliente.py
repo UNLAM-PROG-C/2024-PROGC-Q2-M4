@@ -6,14 +6,12 @@ import menus
 import clases
 import sys
 import os
-#from menus.battle_menu import comenzar_batalla, obtener_imagen_fondo_aleatoria, mostrar_batalla, obtener_imagen_fondo_aleatoria, actualizar_mostrador_vida, crear_elementos_hud
-#from menus.exit_menu import confirmar_salida
+
 from menus.menu_principal import mostrar_pantalla_inicio
 from menus.menu_seleccionar_personaje import menu_selector
 from menus.menu_ganador import mostrar_pantalla_ganador, manejar_eventos, mostrar_mensaje, mostrar_pantalla_perdedor
 from menus.menu_batalla import iniciar_batalla, obtener_imagen_fondo_aleatoria, crear_elementos_hud, actualizar_display_salud
 from menus.menu_salida import confirmar_salida
-#from menus.winner_menu import mostrar_pantalla_ganador, mostrar_pantalla_perdedor, manejar_eventos, mostrar_mensaje
 
 from clases.fondo_animado import FondoAnimado
 from clases.estado_juego import EstadoJuego
@@ -23,7 +21,6 @@ from Compartido import contexto_juego
 from Compartido import constantes
 from Compartido import personaje
 
-# Configuración del socket para la conexión cliente-servidor
 socket_cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket_cliente.connect(("127.0.0.1", 5000))
 
@@ -43,7 +40,6 @@ ventana = contexto_juego.obtener_ventana()
 accion_actual = ""
 turno = ""
 
-# Función para obtener un personaje enemigo aleatorio
 def obtener_personaje_enemigo(indice_enemigo):
     personaje = contexto_juego.obtener_personajes()[indice_enemigo]
     copia_personaje = copy.deepcopy(personaje)
@@ -68,24 +64,20 @@ def bucle_juego(estado_juego):
     indice = estado_juego.indice_personaje_elegido
     print(f"Indice: {indice}")
     socket_cliente.send(f"{CLAVES['INDICE_PERSONAJE_ELEGIDO']}:{indice}".encode())
-    socket_cliente.recv(1024)  # Confirmación del servidor
+    socket_cliente.recv(1024)  
 
-    # Id jugador cliente
     id_cliente = socket_cliente.recv(1024).decode().split(":")[1]
     socket_cliente.send("ACK".encode())
     print(f"ID Aliado: {id_cliente}")
 
-    # Id jugador enemigo
     id_enemigo = socket_cliente.recv(1024).decode().split(":")[1]
     socket_cliente.send("ACK".encode())
     print(f"ID Enemigo: {id_enemigo}")
 
-    # Id personaje cliente
     id_personaje = socket_cliente.recv(1024).decode().split(":")[1]
     socket_cliente.send("ACK".encode())
     print(f"Personaje propio: {id_personaje}")
 
-    # Id personaje enemigo
     id_personaje_enemigo = socket_cliente.recv(1024).decode().split(":")[1]
     socket_cliente.send("ACK".encode())
     print(f"Personaje enemigo: {id_personaje_enemigo}")
@@ -113,7 +105,7 @@ def bucle_juego(estado_juego):
             return estado_juego.accion
         
         elif estado_juego.accion == constantes.ACCION_GANADOR and estado_juego.ganador is not None:
-            mostrar_pantalla_ganador(estado_juego) # Menú del ganador
+            mostrar_pantalla_ganador(estado_juego) 
             accion = estado_juego.accion
 
             if accion == constantes.ACCION_SALIR_JUEGO:
@@ -123,7 +115,6 @@ def bucle_juego(estado_juego):
                 estado_juego.reiniciar_personaje()
                 continue
 
-        # Actualización de vida
         resultado = socket_cliente.recv(1024).decode()
         socket_cliente.send("ACK".encode())
 
@@ -163,7 +154,6 @@ def bucle_juego(estado_juego):
             mostrar_pantalla_ganador(estado_juego)
             break 
 
-        # Actualización de turno
         turno = socket_cliente.recv(1024).decode()
         print(str(turno))
         turno = turno.split(":")[1]
@@ -183,7 +173,7 @@ def bucle_juego(estado_juego):
         estado_juego = None
         main()
 
-    else: #if manejar_eventos() == constants.QUIT_ACTION:
+    else:
         socket_cliente.send("QUIT".encode())
         socket_cliente.recv(1024).decode()
         socket_cliente.close()
@@ -202,7 +192,7 @@ def main():
         constantes.DELAY_FUERA_CUADRO
     )
 
-    mostrar_pantalla_inicio(estado_juego) # Menú principal
+    mostrar_pantalla_inicio(estado_juego)
     pygame.mixer.music.load("Musica/music.mp3")
     pygame.mixer.music.set_volume(0)
     pygame.mixer.music.play(-1)
@@ -219,8 +209,6 @@ def main():
             break
         else:
             mostrar_pantalla_inicio(estado_juego)
-        
-        # Si el jugador cancela la salida, vuelve al menú principal sin cerrar el juego
 
     pygame.mixer.music.stop()
     pygame.quit()
