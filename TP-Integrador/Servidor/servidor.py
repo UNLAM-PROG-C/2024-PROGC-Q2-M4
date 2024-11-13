@@ -9,10 +9,6 @@ from Compartido import contexto_juego
 from Compartido import constantes
 from Compartido import personaje
 
-socket_servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-socket_servidor.bind(("127.0.0.1", 5000))
-socket_servidor.listen(2)
-
 MI_TURNO = 0
 TURNO_ENEMIGO = 1
 CANTIDAD_DE_JUGADORES = 2
@@ -28,7 +24,10 @@ CLAVES = {
     "INDICE_PERSONAJE_JUGADOR": "INDICE_PERSONAJE_JUGADOR"
 }
 
-clientes = []
+socket_servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket_servidor.bind(("127.0.0.1", 5000))
+socket_servidor.listen(CANTIDAD_DE_JUGADORES)
+
 jugadores = []
 indice_jugadores = []
 turno_actual = 0
@@ -37,13 +36,7 @@ jugando = True
 accion_actual = ""
 
 lock = threading.Lock()
-barrera = threading.Barrier(2)
-
-
-def cerrar_servidor(signal, frame):
-    socket_servidor.close()
-    sys.exit(0)
-
+barrera = threading.Barrier(CANTIDAD_DE_JUGADORES)
 
 def manejador_cliente(conexion, direccion, id_cliente):
     global turno_actual, jugadores, indice_jugadores, cantidad_conexiones, jugando, accion_actual
@@ -97,7 +90,7 @@ def manejador_cliente(conexion, direccion, id_cliente):
                     with lock:
                         match str(accion_actual):
                             case "Atacar":
-                                ataque = jugadores[id_cliente].ataque
+                                ataque = jugadores[id_cliente].atacar()
                                 jugadores[id_enemigo].recibir_dano(ataque)
                             case "Defender":
                                 jugadores[id_cliente].defender()
@@ -167,12 +160,15 @@ def iniciar_servidor():
     print("Servidor esperando conexiones...")
     global cantidad_conexiones
     while True:
+        lock.acquire()
         if cantidad_conexiones < CANTIDAD_DE_JUGADORES:
+            lock.release()
             conexion, direccion = socket_servidor.accept()
             threading.Thread(target=manejador_cliente, args=(conexion, direccion, cantidad_conexiones)).start()
             with lock:
                 cantidad_conexiones += 1
         else:
+            lock.release()
             conexion, _ = socket_servidor.accept() 
             conexion.close()
 
