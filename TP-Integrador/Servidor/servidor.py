@@ -88,7 +88,6 @@ def manejador_cliente(conexion, direccion, id_cliente):
         try:
             while True:
                 if turno_actual == id_cliente:
-                    print("Entre a la batalla")
                     accion_actual = conexion.recv(1024).decode()
                     print("Accion batalla:" + str(accion_actual))
                     conexion.send("ACK".encode()) 
@@ -113,12 +112,9 @@ def manejador_cliente(conexion, direccion, id_cliente):
                     conexion.send(f"{CLAVES['ACTUALIZACION_VIDA']}:{id_cliente}:{vida_cliente}:{id_enemigo}:{vida_enemigo}:{accion_actual}".encode())
                     conexion.recv(1024).decode() 
 
-                    print("Pase los send y recv")
-
                     with lock:
                         turno_actual = 1 - turno_actual
 
-                    print("Pase el lock")
                 else:
                     while int(turno_actual) != int(id_cliente):
                         sleep(0.1)
@@ -150,7 +146,6 @@ def manejador_cliente(conexion, direccion, id_cliente):
 
             if(str(respuesta) == "PLAY"):
                 jugando = True
-                print("Sigue jugando")
                 barrera.wait()
                 with lock:
                     jugadores.clear()
@@ -159,7 +154,6 @@ def manejador_cliente(conexion, direccion, id_cliente):
                     indice_jugadores.clear()
             else:
                 jugando = False
-                print("No sigue jugando")
         except Exception as e:
             print("Error" + str(e))
       

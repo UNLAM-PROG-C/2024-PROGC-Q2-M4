@@ -32,12 +32,14 @@ def dibujar_sprite(sprite):
         centro_x, centro_y = obtener_posicion_centrada(rect_sprite.width, rect_sprite.height)
         ventana.blit(sprite, (centro_x, centro_y))
 
-def manejar_eventos():
+def manejar_eventos(estado_juego):
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
-            resultado = confirmar_salida()
-            if resultado == constantes.ACCION_CONFIRMAR or resultado == constantes.ACCION_SALIR:
-                return constantes.ACCION_SALIR
+            resultado = confirmar_salida(estado_juego)
+            if resultado == constantes.ACCION_SALIR_JUEGO:
+                return constantes.ACCION_SALIR_JUEGO
+            elif resultado == constantes.ACCION_CANCELAR:
+                return constantes.ACCION_CANCELAR
         elif evento.type == pygame.KEYDOWN and evento.key == pygame.K_RETURN:
             return constantes.ACCION_JUGAR 
     return None 
@@ -74,7 +76,7 @@ def mostrar_pantalla_ganador(estado_juego):
         mensaje_ganador.dibujar()
         dibujar_sprite(sprite_ganador)
         pygame.display.flip()
-        accion = manejar_eventos() 
+        accion = manejar_eventos(estado_juego) 
         if accion:
             estado_juego.accion = accion
             return  
@@ -112,21 +114,22 @@ def mostrar_pantalla_perdedor(estado_juego):
         dibujar_sprite(sprite_perdedor)
 
         pygame.display.flip()
-        accion = manejar_eventos() 
+        accion = manejar_eventos(estado_juego)
+        if accion:
             estado_juego.accion = accion
-            return 
-import pygame
+            return  
+
 
 def mostrar_mensaje(estado_juego, accion):    
     match str(accion):
         case "Atacar":
-            mensaje = "¡El enemigo ha atacado!"
+            mensaje = "El enemigo ha atacado!"
         case "Defender":
-            mensaje = "¡El enemigo ha mejorado su defensa!"
+            mensaje = "El enemigo ha mejorado su defensa!"
         case "Descansar":
-            mensaje = "¡El enemigo ha recuperado salud!"
+            mensaje = "El enemigo ha recuperado salud!"
         case _:
-            mensaje = "¡El enemigo se ha concentrado para su próximo ataque!"
+            mensaje = "El enemigo se ha concentrado para su proximo ataque!"
     
     mensaje_accion = str(mensaje)
     

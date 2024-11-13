@@ -209,4 +209,4 @@ def mostrar_batalla(estado_juego, socket_cliente):
 def confirmar_salida_batalla(estado_juego):
     confirmar_salida(estado_juego)
 
-    return estado_juego.accion == constantes.ACCION_SALIR
+    return estado_juego.accion == constantes.ACCION_SALIR_JUEGO
