@@ -8,12 +8,12 @@ class Personaje:
         self.ataque = ataque
         self.defensa = defensa
         self.vida_maxima = vida * constantes.MULTIPLICADOR_VIDA_INICIAL
-        self.multiplicador_defensa = 1.0 
+        self.multiplicador_defensa = 1.0
         self.multiplicador_ataque_concentrado = 1.0
-        self.sprites = sprites  
+        self.sprites = sprites
 
     def defender(self):
-        self.multiplicador_defensa = 0.5 
+        self.multiplicador_defensa = 0.5
 
     def descansar(self):
         recuperacion = int(self.vida_maxima * 0.2)
@@ -23,9 +23,15 @@ class Personaje:
             self.vida = self.vida_maxima
 
     def concentrarse(self):
-        self.multiplicador_ataque_concentrado = 2.0
+        self.multiplicador_ataque_concentrado = 2.5
 
     def recibir_dano(self, dano):
         dano *= self.multiplicador_defensa
         self.vida -= dano
-        self.multiplicador_defensa = 1.0 
+        self.multiplicador_defensa = 1.0
+
+    def atacar(self):
+        daño = self.ataque * self.multiplicador_ataque_concentrado
+        self.multiplicador_ataque_concentrado = 1.0
+        return daño
+
