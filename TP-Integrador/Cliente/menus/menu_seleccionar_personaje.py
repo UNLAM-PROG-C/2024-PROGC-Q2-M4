@@ -46,7 +46,7 @@ def cargar_lista_personajes(sprites):
     personaje_seleccionado = personajes[seleccion_actual]
     imagen_a_dibujar = sprites[personaje_seleccionado.nombre]["front"]
     imagen_redimensionada = pygame.transform.scale(imagen_a_dibujar, (constantes.TAMANO_X_PERSONAJE_SELECCIONADO, constantes.TAMANO_Y_PERSONAJE_SELECCIONADO))
-    
+
     sprite_x = constantes.ANCHO_VENTANA // 2 + constantes.POSICION_X_SPRITE_PERSONAJE_SELECCIONADO
     sprite_y = constantes.ALTO_VENTANA // 2 - constantes.TAMANO_Y_PERSONAJE_SELECCIONADO // 2
     ventana.blit(imagen_redimensionada, (sprite_x, sprite_y))
