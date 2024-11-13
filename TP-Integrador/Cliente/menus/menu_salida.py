@@ -27,7 +27,6 @@ def crear_botones():
         constantes.COLOR_NEGRO_TUPLA,
         constantes.BORDES_BOTON_PX,
         constantes.COLOR_NEGRO_TUPLA,
-        #constantes.ACCION_SALIR
         constantes.ACCION_SALIR_JUEGO
     )
 
@@ -77,7 +76,6 @@ def confirmar_salida(estado_juego):
         )
     
     texto_confirmar_salida = Texto(
-        #constantes.MENSAJE_CONFIRMAR_SALIDA,
         constantes.MENSAJE_CONFIRMAR_SALIR,
         constantes.FUENTE_JUEGO,
         constantes.TAMANO_FUENTE_TITULO_CONFIRMAR_SALIR,
