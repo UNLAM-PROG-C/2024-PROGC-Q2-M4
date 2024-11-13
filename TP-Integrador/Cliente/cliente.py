@@ -9,8 +9,8 @@ import os
 
 from menus.menu_principal import mostrar_pantalla_inicio
 from menus.menu_seleccionar_personaje import menu_selector
-from menus.menu_ganador import mostrar_pantalla_ganador, manejar_eventos, mostrar_mensaje, mostrar_pantalla_perdedor
-from menus.menu_batalla import iniciar_batalla, obtener_imagen_fondo_aleatoria, crear_elementos_hud, actualizar_display_salud
+from menus.menu_ganador import mostrar_pantalla_ganador, manejar_eventos, mostrar_pantalla_perdedor
+from menus.menu_batalla import iniciar_batalla, obtener_imagen_fondo_aleatoria, crear_elementos_hud, actualizar_display_salud, mostrar_mensaje
 from menus.menu_salida import confirmar_salida
 
 from clases.fondo_animado import FondoAnimado
@@ -136,7 +136,7 @@ def bucle_juego(estado_juego):
             estado_juego.personaje_enemigo.vida = int(float(vida_cliente_recibido))
 
         if turno != "True":
-            mostrar_mensaje(estado_juego, accion_actual)
+            mostrar_mensaje(accion_actual)
 
         condition_current_character, condition_enemy_character = crear_elementos_hud(estado_juego.personaje_seleccionado, estado_juego.personaje_enemigo)
         actualizar_display_salud(condition_current_character, condition_enemy_character, estado_juego.personaje_seleccionado, estado_juego.personaje_enemigo)

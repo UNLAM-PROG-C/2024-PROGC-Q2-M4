@@ -76,9 +76,7 @@ def crear_botones_acciones():
     ancho_total_espaciado = espaciado_dinamico * (constantes.TOTAL_BOTONES - 1)
     ancho_total = ancho_total_botones + ancho_total_espaciado
 
-
     inicio_x = (constantes.ANCHO_VENTANA - ancho_total) // 2
-
 
     posicion_y = constantes.ALTO_VENTANA - constantes.ALTO_BOTON - constantes.MARGEN_INFERIOR_BOTONES
 
@@ -187,26 +185,47 @@ def iniciar_batalla(estado_juego, es_turno_jugador):
             pygame.display.update()
             return
 
-def mostrar_batalla(estado_juego, socket_cliente):
-
-    estado_juego.imagen_fondo = obtener_imagen_fondo_aleatoria()
-
-    condicion_personaje_actual, condicion_personaje_enemigo = crear_elementos_hud(estado_juego.personaje_seleccionado, estado_juego.personaje_enemigo)
-
-    pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
-
-    while True:
-
-        ventana.blit(estado_juego.imagen_fondo, (0, 0))
-
-        condicion_personaje_actual.dibujar()
-        condicion_personaje_enemigo.dibujar()
-
-        dibujar_personajes(personaje_actual, personaje_enemigo)
-
-        pygame.display.update()
-
 def confirmar_salida_batalla(estado_juego):
     confirmar_salida(estado_juego)
 
     return estado_juego.accion == constantes.ACCION_SALIR_JUEGO
+
+def mostrar_mensaje(accion):    
+    match str(accion):
+        case "Atacar":
+            mensaje = "El enemigo ha atacado!"
+        case "Defender":
+            mensaje = "El enemigo ha mejorado su defensa!"
+        case "Descansar":
+            mensaje = "El enemigo ha recuperado salud!"
+        case _:
+            mensaje = "El enemigo se ha concentrado para su proximo ataque!"
+    
+    mensaje_accion = str(mensaje)
+    
+    texto = Texto(
+        mensaje_accion,
+        constantes.FUENTE_JUEGO,
+        constantes.TAMANO_TITULO_PERSONAJE_GANADOR,
+        constantes.COLOR_BLANCO_TUPLA,
+        constantes.POSICION_X_TITULO_PERSONAJE_GANADOR,
+        constantes.POSICION_Y_MENSAJE_PERSONAJE_GANADOR-200,
+        constantes.TEXTO_CENTRADO
+    )
+    
+    pantalla_actual = ventana.copy()
+
+    inicio_ticks = pygame.time.get_ticks()
+
+    while pygame.time.get_ticks() - inicio_ticks < 1500:  
+
+        ventana.blit(pantalla_actual, (0, 0))
+        
+        texto.dibujar()
+        
+        pygame.display.update()
+        
+        pygame.time.wait(100) 
+    
+    ventana.blit(pantalla_actual, (0, 0))
+    pygame.display.update()
