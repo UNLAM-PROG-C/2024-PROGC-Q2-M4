@@ -153,20 +153,22 @@ def bucle_juego(estado_juego):
             estado_juego.perdedor = estado_juego.personaje_enemigo
             mostrar_pantalla_ganador(estado_juego)
             break 
-
+        
         turno = socket_cliente.recv(1024).decode()
         print(str(turno))
         turno = turno.split(":")[1]
         socket_cliente.send("ACK".encode())
         print(f"Turno: {turno}")
 
-    salida = manejar_eventos()
+    if estado_juego.accion == constantes.ACCION_SALIR_JUEGO:
+        return
+
+    salida = manejar_eventos(estado_juego)
     while salida == None:
-        salida = manejar_eventos()
+        salida = manejar_eventos(estado_juego)
     
     print(f"Salida: {str(salida)}")
     if str(salida) == str(constantes.ACCION_JUGAR):
-        print("Entró a la salida")
         socket_cliente.send("PLAY".encode())
         socket_cliente.recv(1024).decode()
         estado_juego.reiniciar_personajes()
@@ -194,7 +196,7 @@ def main():
 
     mostrar_pantalla_inicio(estado_juego)
     pygame.mixer.music.load("Musica/music.mp3")
-    pygame.mixer.music.set_volume(0)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
 
     while True:
@@ -202,10 +204,10 @@ def main():
         if estado_juego.accion == constantes.ACCION_JUGAR:
             bucle_juego(estado_juego)
 
-        if estado_juego.accion == constantes.ACCION_SALIR_JUEGO:
+        if estado_juego.accion == constantes.ACCION_SALIR:
             confirmar_salida(estado_juego)
             
-        if estado_juego.accion == constantes.SALIR:
+        if estado_juego.accion == constantes.ACCION_SALIR_JUEGO:
             break
         else:
             mostrar_pantalla_inicio(estado_juego)

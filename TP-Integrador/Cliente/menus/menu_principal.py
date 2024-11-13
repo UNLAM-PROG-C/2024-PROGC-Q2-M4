@@ -97,7 +97,6 @@ def mostrar_pantalla_inicio(estado_juego):
         pygame.display.flip()
 
         accion = manejar_eventos([boton_jugar, boton_salir])
-
         if accion in [constantes.ACCION_JUGAR, constantes.ACCION_SALIR]:
             estado_juego.accion = accion
             return
